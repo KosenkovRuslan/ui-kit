@@ -9,6 +9,8 @@ const checkboxDisabledChecked = ref(true);
 
 const selectedHeroes = ref(['1']);
 
+const switchProfessional = ref(false);
+
 const listOfHeroes = ref([
 	{ name: 'Venom', id: '1', disabled: true },
 	{ name: 'Batman', id: '2' },
@@ -50,6 +52,18 @@ const listOfHeroes = ref([
 			:options="listOfHeroes"
 			name="Heroes"
 			v-model:value="selectedHeroes"
+		/>
+	</div>
+	<h2 class="heading-2">Switch</h2>
+	<div class="line line_block">
+		<div>State switch: {{ switchProfessional }}</div>
+		<Checkbox
+			type="switch"
+			label="I'm a professional"
+			id="switch"
+			name="switch"
+			value="I'm a professional"
+			v-model:checked="switchProfessional"
 		/>
 	</div>
 </template>

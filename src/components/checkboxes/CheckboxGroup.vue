@@ -19,7 +19,7 @@ const props = defineProps({
 			const hasIdKey = value.every(option => Object.keys(option).includes('id'));
 
 			return hasNameKey && hasIdKey;
-		}
+		},
 	},
 	disabled: {
 		type: Boolean,
@@ -44,6 +44,7 @@ const check = (params) => {
 		<Checkbox
 			:label="option.name"
 			:id="option.id"
+			type="checkbox"
 			:name="name"
 			:value="option.name"
 			:disabled="option.disabled"

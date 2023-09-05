@@ -16,6 +16,7 @@ const links = ref([
 	{ name: 'Progress', href: '/progress' },
 	{ name: 'Input', href: '/input' },
 	{ name: 'Tabs', href: '/tabs' },
+	{ name: 'Table', href: '/table' },
 ])
 </script>
 
@@ -44,9 +45,9 @@ const links = ref([
 	transition: .3s;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
 	transform: translateX(-250px);
+	z-index: 2;
 	&__isopen {
 		transform: translateX(0px);
-		z-index: 1;
 	}
 	&__link {
 		display: block;

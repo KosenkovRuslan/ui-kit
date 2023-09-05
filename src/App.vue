@@ -49,7 +49,7 @@ const toggleMenu = () => {
 	background: var(--primary);
 	height: 100%;
 	top: 62px;
-	z-index: 2;
+	z-index: 3;
 	cursor: pointer;
 	color: #fff;
 	display: flex;
